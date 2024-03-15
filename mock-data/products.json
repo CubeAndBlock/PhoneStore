@@ -1,0 +1,104 @@
+{
+  "products": [
+    {
+      "name": "2",
+      "price": "2",
+      "ratingStar": "2",
+      "quantity": "2",
+      "sale": "7.5",
+      "install": "5",
+      "image": "product_1.webp",
+      "id": "2"
+    },
+    {
+      "name": "Samsung Galaxy S23+ 5G",
+      "price": "19.990.000",
+      "ratingStar": "4",
+      "quantity": "20",
+      "sale": "8",
+      "install": "0",
+      "image": "Product_3.jpg",
+      "id": "3"
+    },
+    {
+      "name": "Samsung Galaxy S23 5G",
+      "price": "15.990.000",
+      "ratingStar": "4",
+      "quantity": "15",
+      "sale": "9",
+      "install": "5",
+      "image": "Product_4.jpg",
+      "id": "4"
+    },
+    {
+      "name": "Samsung Galaxy Z Fold4 5G         ",
+      "price": "29.990.000",
+      "ratingStar": "5",
+      "quantity": "21",
+      "sale": "8",
+      "install": "7",
+      "image": "Product_5.jpg",
+      "id": "5"
+    },
+    {
+      "name": "Samsung Galaxy Z Flip4 5G         ",
+      "price": "14.990.000",
+      "ratingStar": "4",
+      "quantity": "44",
+      "sale": "7.5",
+      "install": "5",
+      "image": "Product_6.jpg",
+      "id": "6"
+    },
+    {
+      "name": "Samsung Galaxy Z Fold5 5G         ",
+      "price": "40.990.000",
+      "ratingStar": "5",
+      "quantity": "15",
+      "sale": "15",
+      "install": "7",
+      "image": "Product_7.jpg",
+      "id": "7"
+    },
+    {
+      "name": "Samsung Galaxy Z Flip5 5G         ",
+      "price": "25.990.000",
+      "ratingStar": "5",
+      "quantity": "32",
+      "sale": "15",
+      "install": "7",
+      "image": "Product_8.jpg",
+      "id": "8"
+    },
+    {
+      "name": "Samsung Galaxy A54 5G         ",
+      "price": "10.190.000",
+      "ratingStar": "4",
+      "quantity": "33",
+      "sale": "9",
+      "install": "5",
+      "image": "Product_9.jpg",
+      "id": "9"
+    },
+    {
+      "name": "Samsung Galaxy A34 5G",
+      "price": "8.490.000",
+      "ratingStar": "4",
+      "quantity": "22",
+      "sale": "8",
+      "install": "7",
+      "image": "Product_10.jpg",
+      "id": "10"
+    },
+    {
+      "name": "Samsung Galaxy A33 5G",
+      "price": "6.290.000",
+      "ratingStar": "4",
+      "quantity": "26",
+      "sale": "7.5",
+      "install": "5",
+      "image": "Product_12.jpg",
+      "id": "12"
+    }
+  ]
+}

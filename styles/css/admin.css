@@ -1,0 +1,163 @@
+.home #navbar {
+  background: rgb(255, 213, 0);
+}
+.home #navbar .navbar__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home #navbar .navbar__container .navbar__logo a {
+  display: inline-flex;
+  max-width: 100px;
+}
+.home #navbar .navbar__container .navbar__menu {
+  display: inline-flex;
+  align-items: center;
+}
+.home #navbar .navbar__container .navbar__menu li .navbar__link {
+  display: block;
+  padding: 15px 10px;
+  font-size: 1rem;
+  font-family: robotoBold, sans-serif;
+}
+.home #navbar .navbar__container .navbar__menu li .navbar__link span {
+  display: inline-block;
+  padding: 0 2px;
+}
+.home #navbar .navbar__container .navbar__menu li .navbar__link:last-child {
+  padding-right: 0;
+  padding-left: 30px;
+}
+.home .filters {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+  gap: 10px;
+}
+.home .filters__textbox {
+  border: 2px solid gray;
+  width: 500px;
+  display: inline-block;
+  border-radius: 10px;
+  height: 30px;
+  padding: 5px;
+}
+.home .filters #btn-search {
+  background-color: rgb(255, 213, 0);
+  font-family: robotoBold, sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.home .btn-add-new {
+  background-color: rgb(255, 213, 0);
+  font-family: robotoBold, sans-serif;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  font-size: 15px;
+  margin: 0 0 20px 0;
+  width: 200px;
+}
+.home table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.home table tr th,
+.home table tr td {
+  border: 2px solid gray;
+  min-width: 40px;
+  text-align: center;
+  padding: 10px;
+}
+.home table tr td .btn {
+  font-family: robotoBold, sans-serif;
+  background-color: yellow;
+  padding: 2px;
+}
+.home table tr td .btn .btn-delete-product {
+  background-color: #de4458;
+}
+
+#modal {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.259);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+#modal.active {
+  display: flex;
+}
+#modal .modal__body {
+  background-color: #fff;
+  width: 650px;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+#modal .modal__body .modal__heading {
+  font-family: robotoBold, sans-serif;
+  font-size: 25px;
+}
+#modal .modal__body .divide {
+  height: 1px;
+  background-color: #666;
+  margin: 10px 0 20px 0;
+}
+#modal .modal__body .form__container label {
+  display: block;
+  font-family: robotoBold, sans-serif;
+}
+#modal .modal__body .form__container label span {
+  color: #d0021c;
+}
+#modal .modal__body .form__container label.btn-upload {
+  background-color: yellow;
+  display: inline-block;
+  padding: 12px;
+  margin: 5px;
+  border-radius: 10px;
+  letter-spacing: 2px;
+}
+#modal .modal__body .form__container input:not(input[type=file]) {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 8px;
+  height: 35px;
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+#modal .modal__body .form__container .error {
+  color: red;
+  text-align: left;
+  margin: 0 0 5px 0;
+}
+#modal .modal__body .form__container select {
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 8px;
+  height: 35px;
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+#modal .modal__body p {
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+#modal .modal__body p .btn {
+  background-color: rgb(255, 213, 0);
+  color: #fff;
+  margin: 0 10px;
+  width: 100px;
+  display: inline-block;
+}
+#modal .modal__body p .btn:hover {
+  background-color: #666;
+}

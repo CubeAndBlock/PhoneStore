@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/landing-page/ecommerce.webp">
+    <link rel="stylesheet" href="../library/bootstrap-5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../styles/css/common.css">
+    <link rel="stylesheet" href="../styles/css/admin.css">
+    <title>Admin page thegioididong</title>
+</head>
+<body>
+    <div class="home">
+        <div id="navbar">
+            <div class="container navbar__container">
+                <div class="navbar__logo">
+                    <a href="../landing_page/index.html">
+                        <img src="../assets/landing-page/logo.png" alt="">
+                    </a>
+                </div>
+                <ul class="navbar__menu">
+                    <li>
+                        <a href="../landing_page/index.html" class="navbar__link">
+                            <span><i class="fa-solid fa-house"></i></span>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../admin/index.html" class="navbar__link">
+                            <span><i class="fa-solid fa-pager"></i></span>
+                            <span>Admin</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="filters">
+                <input type="text" id="input-search" class="filters__textbox" placeholder="Nhap ten san pham muon tim kiem">
+                <button id="btn-search" class="btn btn-search">Tim kiem</button>
+            </div>
+            <br><br><br>
+            <button class="btn-add-new" id="btn-add-new">Thêm mới sản phẩm</button>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tên sp</th>
+                        <th>Giá</th>
+                        <th>Đánh giá sp</th>
+                        <th>Số lượng đã bán</th>
+                        <th>Phần trăm giá gốc được giảm</th>
+                        <th>Lãi xuất trả góp</th>
+                        <th>Ảnh sản phẩm</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="table">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="modal">
+        <div class="modal__body">
+            <h1 class="modal__heading">Thêm mới sản phẩm</h1>
+            <div class="divide"></div>
+            <form action="">
+                <div class="form__container">
+                    <label for="productName">Tên sản phẩm <span>*</span></label>
+                    <input type="text" placeholder="Nhập tên sản phẩm" name="productName" id="productName">
+                    <p class="error" id="name-error"></p>
+                </div>
+                <div class="form__container">
+                    <label for="productPrice">Giá bán sản phẩm <span>*</span></label>
+                    <input type="text" placeholder="Nhập giá bán sản phẩm" name="productPrice" id="productPrice">
+                    <p class="error" id="price-error"></p>
+                </div>
+                <div class="form__container">
+                    <label for="productRate">Đánh giá sản phẩm <span>*</span></label>
+                    <input type="number" placeholder="Đánh giá sản phẩm" name="productRate" id="productRate">
+                    <p class="error" id="rate-error"></p>
+                </div>
+                <div class="form__container">
+                    <label for="productQuantity">Số lượng đã bán <span>*</span></label>
+                    <input type="number" placeholder="Số lượng đã bán" name="productQuantity" id="productQuantity">
+                    <p class="error" id="quantity-error"></p>
+                </div>
+                <div class="form__container">
+                    <label for="productSale">Phần trăm giá gốc được giảm</label>
+                    <select name="productSale" id="productSale">
+                        <option value="7.5">7.5</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="15">15</option>
+                    </select>
+                </div>
+                <div class="form__container">
+                    <label for="productInstall">Lãi xuất trả góp <span>*</span></label>
+                    <select name="productInstall" id="productInstall">
+                        <option value="">Chọn lãi xuất trả góp</option>
+                        <option value="0">0</option>
+                        <option value="5">5</option>
+                        <option value="7">7</option>
+                    </select>
+                    <p class="error" id="install-error"></p>
+                </div>
+                <div class="form__container">
+                    <label for="">Ảnh sản phẩm <span>*</span></label>
+                    <label class="btn-upload" id="btn-upload-image" for="productImage">Tải ảnh lên</label>
+                    <input type="file" name="productImage" id="productImage" hidden>
+                    <span id="product-image"></span>
+                    <p class="error" id="image-error"></p>
+                </div>
+                <p>
+                    <button type="reset" class="btn btn-reset">Làm mới</button>
+                    <button class="btn btn-submit" id="btn-submit-form">Thêm mới</button>
+                </p>
+            </form>
+        </div>
+    </div>
+    <script src="../library/bootstrap-5.3.0/js/bootstrap.min.js"></script>
+    <script src="../library/jquery_3.7.0.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
